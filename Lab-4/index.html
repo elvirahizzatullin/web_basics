@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JavaScript Sandbox</title>
+    <meta charset="UTF-8" />
+  </head>
+
+  <body>
+    <h1>Моя перша HTML-форма</h1>
+    <form id="form" method="post" action="https://httpbin.org/post">
+      <label for="name">Ім'я:</label>
+      <input type="text" id="name" name="name" required /><br /><br />
+
+      <label for="birthdate">Дата народження:</label>
+      <input type="date" id="birthdate" name="birthday" required /><br /><br />
+
+      <label for="email">Імейл:</label>
+      <input type="email" id="email" name="email" required /><br /><br />
+
+      <label for="message">Повідомлення:</label>
+      <textarea id="message" name="message" required></textarea><br /><br />
+
+      <picture>
+        <source
+          media="(max-width: 468px)"
+          srcset="https://picsum.photos/300/500"
+        />
+        <source
+          media="(min-width: 469px)"
+          srcset="https://picsum.photos/1000/400"
+        />
+        <img src="https://picsum.photos/1000/400" alt="Адаптивне зображення" />
+      </picture>
+
+      <br /><br />
+      <label><input type="checkbox" name="drink" value="coffee" /> Кава</label
+      ><br />
+      <label><input type="checkbox" name="drink" value="tea" /> Чай</label
+      ><br />
+      <label><input type="checkbox" name="drink" value="juice" /> Сік</label
+      ><br />
+      <label><input type="checkbox" name="drink" value="water" /> Вода</label
+      ><br /><br />
+
+      <label
+        ><input type="radio" name="nationality" value="ukrainian" required />
+        Українець</label
+      ><br />
+      <label
+        ><input type="radio" name="nationality" value="mukachivec" />
+        Кореєць</label
+      ><br />
+      <label
+        ><input type="radio" name="nationality" value="german" /> Китаєць</label
+      >
+      <br /><br />
+      <button type="submit">Надіслати</button>
+      <button type="reset">Очистити</button><br /><br />
+    </form>
+  </body>
+</html>
