@@ -16,3 +16,7 @@ h1 {
     text-align: center;
     color: red;
 }
+strong {
+    color:red;
+    text-decoration: none;
+}
